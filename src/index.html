@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
+
   
   <title>Frontend Mentor | Notifications page</title>
 
@@ -17,15 +18,27 @@
 </head>
 <body>
 
+  <!-- theme switcher -->
+  <form action="" class="theme">
+    <fieldset>
+      <legend class="visually-hidden">Pick a color scheme</legend>
+      <label for="theme" class="visually-hidden">Light</label>
+      <input type="radio" name="theme" class="light" checked>
+
+      <label for="theme" class="visually-hidden">Dark</label>
+      <input type="radio" name="theme" class="dark">
+    </fieldset>
+  </form>
+
   <main>
     <!-- Top part - Num of notifications and mark as read -->
     <div class="top">
-      <div class="notifications">Notifications <span>3</span></div>
+      <div class="notifications">Notifications <span class="n-num">3</span></div>
       <p class="mark">Mark all as read</p>
     </div>
 
     <!-- Mark Webber notification -->
-    <div class="notification-1">
+    <div class="notification n1 unread">
       <!-- avatar -->
       <div>
         <img class="mark avatar" src="./assets/images/avatar-mark-webber.webp" alt="">
@@ -33,13 +46,13 @@
 
       <!-- notification desc -->
       <div>
-        <p><a href='#'><strong>Mark Webber</strong></a> reacted to you recent post <a href='#' class="post">My first tournament today!</a></p>
-        <p>1m ago</p>
+        <p><a href='#' class="name"><strong>Mark Webber</strong></a> reacted to you recent post <a href='#' class="post">My first tournament today!</a> <span class="dot"></span></p>
+        <p class="time">1m ago</p>
       </div>
     </div>
 
     <!-- Angela Gray notification -->
-    <div class="notification-2">
+    <div class="notification n2 unread">
       <!-- avatar -->
       <div>
         <img class="angela avatar" src="./assets/images/avatar-angela-gray.webp" alt="">
@@ -47,13 +60,13 @@
 
       <!-- notification desc -->
       <div>
-        <p><a href='#'><strong>Angela Gray</strong></a> followed you</p>
-        <p>5m ago</p>
+        <p><a href='#' class="name"><strong>Angela Gray</strong></a> followed you <span class="dot"></span></p>
+        <p class="time">5m ago</p>
       </div>
     </div>
 
     <!-- Jacob Thompson notification -->
-    <div class="notification-3">
+    <div class="notification n3 unread">
       <!-- avatar -->
       <div>
         <img class="jacob avatar" src="./assets/images/avatar-jacob-thompson.webp" alt="">
@@ -61,13 +74,13 @@
 
       <!-- notification desc -->
       <div>
-        <p><a href='#'><strong>Jacob Thompson</strong></a> has joined your group <a href='#' class="group">Chess Club</a></p>
-        <p>1 day ago</p>
+        <p><a href='#' class="name"><strong>Jacob Thompson</strong></a> has joined your group <a href='#' class="group">Chess Club</a> <span class="dot"></span></p>
+        <p class="time">1 day ago</p>
       </div>
     </div>
 
     <!-- Rizky Hasanuddin notification -->
-    <div class="notification-4">
+    <div class="notification n4">
       <!-- avatar -->
       <div>
         <img class="rizky avatar" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
@@ -75,36 +88,39 @@
 
       <!-- notification desc -->
       <div>
-        <p><a href='#'><strong>Rizky Hasanuddin</strong></a> sent you a private message</p>
-        <p>5 days ago</p>
+        <p><a href='#' class="name"><strong>Rizky Hasanuddin</strong></a> sent you a private message</p>
+        <p class="time">5 days ago</p>
 
         <!-- private message -->
-        <div>
+        <div class="message">
           Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
         </div>
       </div>
     </div>
 
     <!-- Kimberly Smith notification -->
-    <div class="notification-5">
-      <!-- avatar -->
-      <div>
-        <img class="kimberly avatar" src="./assets/images/avatar-kimberly-smith.webp" alt="">
-      </div>
+    <div class="notification n5">
+      <div class = "n5-wrapper">
+        <!-- avatar -->
+        <div>
+          <img class="kimberly avatar" src="./assets/images/avatar-kimberly-smith.webp" alt="">
+        </div>
 
-      <!-- notification desc -->
-      <div>
-        <p><a href='#'><strong>Kimberly Smith</strong></a> commented on your picture</p>
-        <p>1 week ago</p>
+        <!-- notification desc -->
+        <div>
+          <p><a href='#' class="name"><strong>Kimberly Smith</strong></a> commented on your picture</p>
+          <p class="time">1 week ago</p>
+        </div>
       </div>
+      
 
-      <div>
+      <div class="yPic">
         <img src="./assets/images/image-chess.webp" alt="a picture of you playing chess">
       </div>
     </div>
 
     <!-- Nathan Peterson notification -->
-    <div class="notification-6">
+    <div class="notification n6">
       <!-- avatar -->
       <div>
         <img class="nathan avatar" src="./assets/images/avatar-nathan-peterson.webp" alt="">
@@ -112,13 +128,13 @@
 
       <!-- notification desc -->
       <div>
-        <p><a href='#'><strong>Nathan Peterson</strong></a> reacted to you recent post <a href='#' class="post">5 end-game strategies to increase your win rate</a></p>
-        <p>2 weeks ago</p>
+        <p><a href='#' class="name"><strong>Nathan Peterson</strong></a> reacted to you recent post <a href='#' class="post">5 end-game strategies to increase your win rate</a></p>
+        <p class="time">2 weeks ago</p>
       </div>
     </div>
 
   <!-- Anna Kim notification -->
-  <div class="notification-7">
+  <div class="notification n7">
     <!-- avatar -->
     <div>
       <img class="anna avatar" src="./assets/images/avatar-anna-kim.webp" alt="">
@@ -126,12 +142,14 @@
 
     <!-- notification desc -->
     <div>
-      <p><a href='#'><strong>Anna Kim</strong></a> left the group <a href='#' class="group">Chess Club</a></p>
-      <p>2 weeks ago</p>
+      <p><a href='#' class="name"><strong>Anna Kim</strong></a> left the group <a href='#' class="group">Chess Club</a></p>
+      <p class="time">2 weeks ago</p>
     </div>
   </div>    
 
   </main>
 
+
+  <script src="./script.js"></script>
 </body>
 </html>

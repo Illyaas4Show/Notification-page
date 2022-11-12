@@ -1,3 +1,6 @@
+https://www.youtube.com/watch?v=qs_VhlPq5Ik - credits
+https://www.youtube.com/watch?v=fyuao3G-2qg
+
 # Frontend Mentor - Notifications page solution
 
 This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 

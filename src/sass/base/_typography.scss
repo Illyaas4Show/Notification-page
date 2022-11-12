@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.notifications {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--black);
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.mark {
+    color: var(--dark-grayish-blue);
+    cursor: pointer;
+}
+
+p {
+    line-height: 1.2rem;
+    color: var(--dark-grayish-blue);
+}
+
+.notification {
+    a {
+        text-decoration: none;
+        font-weight: 900;
+    }
+
+    .name {
+        color: var(--very-dark-blue);
+        transition: .5s all ease;
+
+        &:hover {
+            color: var(--blue);
+        }
+    }
+
+    .post {
+        color: var(--dark-grayish-blue);
+        transition: .5s all ease;
+        
+        &:hover {
+            color: var(--blue);
+        }
+    }
+
+    .group {
+        color: var(--blue);
+    }
+
+    .time {
+        color: var(--grayish-blue);
+    }
+
+    .message {
+        color: var(--dark-grayish-blue);
+    }
+}

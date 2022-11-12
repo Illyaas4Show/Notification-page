@@ -1,0 +1,65 @@
+
+// amount of notifications and the mark as read button
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    span {
+        color: var(--very-light-grayish-blue);
+        padding-inline: .8rem;
+        padding-block: .3rem;
+        background-color: var(--blue);
+        border-radius: .4rem;
+        margin-left: .5rem;
+    }
+}
+
+.notification {
+    display: flex;
+    margin-bottom: .7rem;
+    padding: 1rem;
+    border-radius: .7rem;
+    max-width: 40rem;
+    transition: .5s all ease;
+}
+
+.n1, .n2, .n3 {
+    background-color: var(--very-light-grayish-blue);
+}
+
+.dot {
+    background-color: var(--red);
+    border-radius: 50%;
+    display: inline-block;
+    padding: .3rem;
+    transition: .5s all ease;
+}
+
+.n4 .message {
+    background-color: var(--white);
+    border: 1px solid var(--light-grayish-blue-2);
+    padding: 1rem;
+    border-radius: .3rem;
+    transition: .5s all ease;
+    cursor: pointer;
+    margin-top: .7rem;
+
+    &:hover {
+        background-color: var(--light-grayish-blue-2);
+    }
+}
+
+.n5 {
+    display: flex;
+    justify-content: space-between;
+
+    &-wrapper {
+        display: flex;
+    }
+}
+
+.n7 {
+    margin-bottom: 0;
+}

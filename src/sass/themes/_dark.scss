@@ -1,0 +1,13 @@
+// dark theme
+:root:has(.dark:checked) { // change to dark later
+    --very-light-grayish-blue: hsl(0, 0%, 16%);
+    --white: hsl(0, 0%, 20%);
+    --very-dark-blue: hsl(224, 21%, 90%);
+    --blue: hsl(219, 85%, 60%);
+    --very-dark-blue: hsl(224, 21%, 60%);
+    --grayish-blue: hsl(219, 14%, 43%);
+    --dark-grayish-blue: hsl(219, 12%, 52%);
+    --light-grayish-blue-1: hsl(211, 68%, 90%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --black: white;
+}
