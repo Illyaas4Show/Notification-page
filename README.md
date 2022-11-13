@@ -1,6 +1,3 @@
-https://www.youtube.com/watch?v=qs_VhlPq5Ik - credits
-https://www.youtube.com/watch?v=fyuao3G-2qg
-
 # Frontend Mentor - Notifications page solution with theme switcher
 
 This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC).
@@ -17,7 +14,6 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -53,6 +49,7 @@ Users should be able to:
 
 I haven't coded in quite a while so this was like a refresh project but I still learnt a lot, which is something I love about coding! 
 - I learnt how to make a theme switcher, which was pretty cool.
+- I am starting to get the hang of the 7-1 Sass layout.
 - I learnt how to use the `:has()` selector.
 - I learnt about the `display: inline-block;` - didn't really know what it did until now.
 - I learnt an important difference between SCSS variables `$example: red;` and CSS custom properties `--example: red;`:
@@ -66,27 +63,14 @@ I haven't coded in quite a while so this was like a refresh project but I still 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I really enjoyed the theme switching so I will try to use it in my future projects. I will also try to make my own little SCSS template to make starting up projects a lot easier.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [JavaScript Front](https://www.youtube.com/watch?v=qs_VhlPq5Ik) - This helped me with the little dots on the notifications by informing me about the `display: inline-black;`.
+- [Kevin Powell](https://www.youtube.com/watch?v=fyuao3G-2qg) - He helped me with the theme switcher.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@Illyaas4Show](https://www.frontendmentor.io/profile/Illyaas4Show)
+- Github - [@Illyaas4Show](https://github.com/Illyaas4Show)
